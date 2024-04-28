@@ -16,6 +16,7 @@
  */
 package org.acme.main;
 
+import io.quarkus.arc.Arc;
 import io.quarkus.runtime.Quarkus;
 import io.quarkus.runtime.QuarkusApplication;
 import io.quarkus.runtime.annotations.QuarkusMain;
@@ -23,7 +24,7 @@ import java.util.Base64;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.ExtendedCamelContext;
-import org.apache.camel.impl.DefaultCamelContext;
+import org.apache.camel.quarkus.core.CamelRuntime;
 import org.apache.camel.spi.Resource;
 import org.apache.camel.spi.RoutesLoader;
 import org.apache.camel.support.ResourceHelper;
@@ -46,9 +47,9 @@ public class Main implements QuarkusApplication {
         }
         String encodedYaml = args[0];
         byte[] decodedYaml = Base64.getDecoder().decode(encodedYaml.getBytes());
-        try (final DefaultCamelContext ctx = new DefaultCamelContext()) {
-            load(ctx, decodedYaml);
-        }
+        CamelRuntime runtime = Arc.container().instance(CamelRuntime.class).get();
+        CamelContext ctx = runtime.getCamelContext();
+        load(ctx, decodedYaml);
         return 0;
     }
     private void load(CamelContext ctx, byte[] decodedYaml) throws Exception {
