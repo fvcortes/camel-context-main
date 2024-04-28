@@ -1,0 +1,5 @@
+- from:
+    uri: "direct:my-route"
+    steps:
+      - log:
+          message: "Logging from my-route..."

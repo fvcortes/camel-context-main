@@ -1,0 +1,11 @@
+2024-04-28 11:09:24,352 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [io.quarkus] (main) camel-quarkus-context-main 1.0.0 on JVM (powered by Quarkus 3.9.1) started in 1.541s. 
+2024-04-28 11:09:24,355 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [io.quarkus] (main) Profile test activated. 
+2024-04-28 11:09:24,355 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [io.quarkus] (main) Installed features: [camel-core, camel-yaml-dsl, cdi]
+2024-04-28 11:09:24,468 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.acm.mai.Main] (main) Routes loaded successfully.
+2024-04-28 11:09:24,471 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 4.4.1 (camel-2) is shutting down (timeout:45s)
+2024-04-28 11:09:24,476 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Routes stopped (stopped:0)
+2024-04-28 11:09:24,479 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 4.4.1 (camel-2) shutdown in 10ms (uptime:)
+2024-04-28 11:09:24,538 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 4.4.1 (camel-1) is shutting down (timeout:45s)
+2024-04-28 11:09:24,539 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Routes stopped (stopped:0)
+2024-04-28 11:09:24,539 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [org.apa.cam.imp.eng.AbstractCamelContext] (main) Apache Camel 4.4.1 (camel-1) shutdown in 0ms (uptime:)
+2024-04-28 11:09:24,561 fcortes-xps-8700 surefirebooter-20240428110919981_3.jar[1881810] INFO  [io.quarkus] (main) camel-quarkus-context-main stopped in 0.029s
