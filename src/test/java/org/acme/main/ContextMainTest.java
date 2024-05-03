@@ -31,6 +31,6 @@ public class ContextMainTest {
 
     @Test
     public void testContextMain() throws Exception {
-        assertDoesNotThrow(() -> contextMain.run("LSBmcm9tOgogICAgdXJpOiAiZGlyZWN0Om15LXJvdXRlIgogICAgc3RlcHM6CiAgICAgIC0gbG9nOgogICAgICAgICAgbWVzc2FnZTogIkxvZ2dpbmcgZnJvbSBteS1yb3V0ZS4uLiI="));
+        assertDoesNotThrow(() -> contextMain.run("LSBmcm9tOgogICAgdXJpOiAicXVhcnR6Oi8vaXBhYXMvbXktdHJpZ2dlcj9jcm9uPSorKisqKyorKis/IgogICAgc3RlcHM6CiAgICAgIC0gc2V0UHJvcGVydHk6CiAgICAgICAgICBuYW1lOiAiaXBhYXMuc3RhcnRUaW1lIgogICAgICAgICAgZXhwcmVzc2lvbjoKICAgICAgICAgICAgZ3Jvb3Z5OiAiamF2YS50aW1lLkluc3RhbnQubm93KCkiCiAgICAgIC0gbG9nOgogICAgICAgICAgbWVzc2FnZTogJz4+Pj4+IEV4ZWN1dGFuZG8gaW50ZWdyYWNhbycKICAgICAgLSB0bzoKICAgICAgICAgIHVyaTogIm1vY2s6cmVzdWx0IgogICAgICAtIHRvOgogICAgICAgICAgdXJpOiAiZGlyZWN0Om15LXJvdXRlIgotIGZyb206CiAgICB1cmk6ICJkaXJlY3Q6bXktcm91dGUiCiAgICBzdGVwczoKICAgICAgLSBsb2c6CiAgICAgICAgICBtZXNzYWdlOiAiTG9nZ2luZyBmcm9tIG15LXJvdXRlLi4uIg=="));
     }
 }

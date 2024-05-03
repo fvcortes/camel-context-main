@@ -41,6 +41,7 @@ public class ContextMain implements QuarkusApplication {
         byte[] decodedYaml = Base64.getDecoder().decode(encodedYaml.getBytes());
         LOG.infof("Decoded input: %s", new String(decodedYaml));
         load(camelContextManager.getCamelContext(), decodedYaml);
+        camelContextManager.getCamelContext().init();
         return 0;
     }
 

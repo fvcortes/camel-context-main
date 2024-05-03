@@ -38,8 +38,8 @@ public class CamelContextManager {
         configureCamelContext(defaultCamelContext);
     }
 
-    public CamelContext getCamelContext() {
-        return camelContext;
+    public DefaultCamelContext getCamelContext() {
+        return defaultCamelContext;
     }
 
     @PreDestroy
