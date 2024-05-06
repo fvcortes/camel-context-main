@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  java17-mvn-default
+
+  Sample SAM Template for java17-mvn-default
+
+Globals:
+  Function:
+    Architectures:
+      - x86_64
+    Runtime: java17
+    MemorySize: 1024
+    Timeout: 30
+Resources:
+  Validate:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: target/function.zip
+      Handler: io.quarkus.amazon.lambda.runtime.QuarkusStreamHandler::handleRequest
+      Policies: AWSLambdaBasicExecutionRole
+      Environment:
+        Variables:
+          QUARKUS_LAMBDA_HANDLER: yaml-validate
+      Events:
+        Validate:
+          Type: Api
+          Properties:
+            Path: /v1/yaml-validate
+            Method: POST
