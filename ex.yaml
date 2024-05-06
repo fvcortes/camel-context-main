@@ -1,5 +1,5 @@
 - from:
-    uri: "direct:my-route"
+    uri: "quartz://ipaas/my-trigger?cron=*+*+*+*+*+?"
     steps:
       - log:
-          message: "Logging from my-route..."
+          message: "Logging from my-trigger..."
